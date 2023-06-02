@@ -33,7 +33,7 @@ const Form = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className="form__container">
       <h5>Name:</h5>{" "}
       <input
         defaultValue={initData?.name}
