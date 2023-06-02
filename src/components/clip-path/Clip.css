@@ -1,0 +1,33 @@
+.clip__container {
+  background-color: blue;
+  height: 400px;
+  width: 500px;
+  padding: 8px;
+  margin: 24px;
+}
+
+.clip {
+  clip-path: polygon(0% 0%, 100% 0, 100% 64%, 53% 100%, 0 69%);
+}
+
+.inner__clip {
+  height: 200px;
+  width: 200px;
+  padding-top: 20px;
+  margin: 30px;
+}
+
+.child__clip {
+  background-color: beige;
+  height: 200px;
+  margin: 0 8px;
+  padding-bottom: 5px;
+}
+
+.clip__text {
+  text-align: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: 900;
+  padding-top: 25%;
+}
