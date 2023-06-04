@@ -1,11 +1,11 @@
 import "./App.css";
 import Form from "./components/form/Form";
-import { Printer } from "./components/reactToPrint/Printer";
+import Printer from "./components/reactToPrint/Printer";
 
 function App() {
   return (
     <div className="App">
-      <Printer combo={<Form />} />
+      <Printer contentToPrint={<Form />} />
     </div>
   );
 }

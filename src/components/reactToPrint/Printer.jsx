@@ -1,12 +1,14 @@
 import React, { useRef } from "react";
 import { useReactToPrint } from "react-to-print";
+import PropTypes from "prop-types";
+import "./Printer.css";
 
 /* 
 ===========  Run the following to use ============
 ===========  npm i react-to-print ============
 */
 
-export const Printer = ({ combo }) => {
+const Printer = ({ contentToPrint }) => {
   const componentRef = useRef();
   const handlePrint = useReactToPrint({
     content: () => componentRef.current,
@@ -16,7 +18,7 @@ export const Printer = ({ combo }) => {
   return (
     <div>
       <div className="print__this" ref={componentRef}>
-        {combo}
+        {contentToPrint}
       </div>
       <button type="button" onClick={handlePrint}>
         Download
@@ -24,3 +26,9 @@ export const Printer = ({ combo }) => {
     </div>
   );
 };
+
+Printer.propTypes = {
+  contentToPrint: PropTypes.node.isRequired,
+};
+
+export default Printer;
