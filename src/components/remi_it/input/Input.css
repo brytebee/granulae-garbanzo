@@ -1,0 +1,9 @@
+.input__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.remit__input {
+  padding: 1%;
+  width: 15%;
+}
