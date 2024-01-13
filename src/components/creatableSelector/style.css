@@ -1,0 +1,42 @@
+.box {
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.box .bi-check-wrapper {
+  border: 0px none;
+  height: 34.13px;
+  overflow-x: hidden;
+  position: relative;
+  width: 34.13px;
+}
+
+.box .bi-check {
+  background-color: #00345b;
+  border-radius: 20.08px;
+  height: 34px;
+  left: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 34px;
+}
+
+.box .element {
+  color: #ffffff;
+  font-family: "Jost-Bold", Helvetica;
+  font-size: 25.3px;
+  font-weight: 700;
+  height: 28px;
+  left: 10px;
+  letter-spacing: 0;
+  line-height: 30.3px;
+  position: absolute;
+  text-align: center;
+  top: 3px;
+  white-space: nowrap;
+  width: 14px;
+}
